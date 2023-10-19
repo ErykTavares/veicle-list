@@ -1,0 +1,9 @@
+.vehicle-list-grid {
+	width: 100%;
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minMax(300px, 300px));
+	place-content: center;
+	gap: 1.2rem;
+	margin-top: 2rem;
+	padding: 0.5rem;
+}
