@@ -10,3 +10,15 @@
 	box-sizing: border-box;
 	font-family: 'Roboto', sans-serif;
 }
+
+.capitalize-first::first-letter {
+	text-transform: uppercase;
+}
+
+input[type='number']::-webkit-inner-spin-button {
+	-webkit-appearance: none;
+}
+input[type='number'] {
+	-moz-appearance: textfield;
+	appearance: textfield;
+}

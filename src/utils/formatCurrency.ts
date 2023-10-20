@@ -3,6 +3,7 @@ const formatCurrency = (currency?: number, options?: Intl.NumberFormatOptions  )
         (currency || 0)?.toLocaleString("pt-BR", options ||  {
             style: "currency",
             currency: "BRL",
+        
         }) 
     
     )

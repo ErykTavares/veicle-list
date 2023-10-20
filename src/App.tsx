@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import { BrowserRouter, useRoutes } from 'react-router-dom';
 import routes from './routes';
 
@@ -7,6 +7,10 @@ const App = (): JSX.Element => {
 		any,
 		string | React.JSXElementConstructor<any>
 	> | null => useRoutes(routes());
+
+	useEffect(() => {
+		document.documentElement.setAttribute('data-theme', 'light');
+	}, []);
 
 	return (
 		<BrowserRouter>

@@ -1,5 +1,9 @@
+import React, { useCallback, useEffect, useState } from 'react';
+import Button from '@/components/form/button';
 import VehicleList from '@/components/vehicleList';
-import React, { useState } from 'react';
+import { PlusIcon } from '@heroicons/react/24/solid';
+import Modal from '@/components/modal';
+import VehicleForm from './components/vehicleForm';
 
 export interface Car {
 	id: number;
@@ -88,12 +92,37 @@ const mock: Car[] = [
 
 const Home = () => {
 	const [vehicles, setVehicles] = useState<Car[]>(mock);
+	const [showModal, setShowModal] = useState(false);
+
+	const handleShowModal = () => {
+		setShowModal(!showModal);
+	};
+
+	const vehiclesGet = useCallback(() => {
+		const data = JSON.parse(localStorage.getItem('carList') || '[]');
+		if (data) {
+			setVehicles([...mock, ...data]);
+		}
+	}, [showModal]);
+
+	useEffect(() => {
+		vehiclesGet();
+	}, [vehiclesGet]);
 
 	return (
 		<section className='w-full h-screen pt-3 flex flex-col items-center justify-start'>
-			<h2 className='text-lg font-semibold'>Catálogo</h2>
+			<header className='w-full max-w-[930px] flex items-center justify-between mb-2'>
+				<h2 className='text-lg font-semibold justify-self-start'>Catálogo</h2>
+				<Button className='btn-outline btn-success' onClick={handleShowModal}>
+					<PlusIcon className='h-6 w-6' />
+					Novo Carro
+				</Button>
+			</header>
 
 			<VehicleList vehicles={vehicles} />
+			<Modal show={showModal} handleClose={handleShowModal} title='Novo Carro'>
+				<VehicleForm handleShowModal={handleShowModal} />
+			</Modal>
 		</section>
 	);
 };

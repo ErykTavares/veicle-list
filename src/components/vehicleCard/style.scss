@@ -6,4 +6,13 @@
 	&:hover {
 		transform: scale(1.1);
 	}
+
+	.km-button {
+		width: 50px;
+		background-color: #edeafd;
+		color: #4b3b9e;
+		text-align: center;
+		padding: 0.2rem;
+		border-radius: 0.2rem;
+	}
 }

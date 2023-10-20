@@ -11,12 +11,12 @@ const VehicleList = ({ vehicles }: { vehicles: Car[] }): JSX.Element => {
 		<div className='w-full flex flex-col items-center justify-start'>
 			<div className='mt-3 vehicle-list-grid'>
 				{vehicleWithBrand.map((item) => (
-					<VehicleCard {...item} />
+					<VehicleCard key={item.id} {...item} />
 				))}
 			</div>
 			<div className='mt-3 vehicle-list-grid'>
 				{vehicleWithoutBrand.map((item) => (
-					<VehicleCard {...item} />
+					<VehicleCard key={item.id} {...item} />
 				))}
 			</div>
 		</div>

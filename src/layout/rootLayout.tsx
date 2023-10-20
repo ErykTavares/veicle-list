@@ -6,7 +6,7 @@ const RootLayout = (): JSX.Element => {
 	return (
 		<>
 			<Header />
-			<main className='w-full h-screen flex justify-center bg-[#f3f3f3]'>
+			<main className='w-full h-screen overscroll-y-auto p-[2rem] pt-2 flex justify-center bg-[#f3f3f3]'>
 				<Outlet />
 			</main>
 		</>
