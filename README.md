@@ -1,27 +1,39 @@
-# React + TypeScript + Vite
+# **Projeto de Lista de Veículos**
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+### **Descrição:**
 
-Currently, two official plugins are available:
+Este projeto React consiste em uma aplicação que exibe uma listagem de veículos, agrupados por marcas. Os dados são consumidos a partir das seguintes URLs:
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+https://wswork.com.br/cars_by_brand.json
+https://wswork.com.br/cars.json
+A aplicação também inclui um formulário para a persistência de novos carros.
 
-## Expanding the ESLint configuration
+---
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+### **Site do Projeto**
 
-- Configure the top-level `parserOptions` property like this:
+**https://veicle-list.vercel.app/**
 
-```js
-   parserOptions: {
-    ecmaVersion: 'latest',
-    sourceType: 'module',
-    project: ['./tsconfig.json', './tsconfig.node.json'],
-    tsconfigRootDir: __dirname,
-   },
-```
+---
 
-- Replace `plugin:@typescript-eslint/recommended` to `plugin:@typescript-eslint/recommended-type-checked` or `plugin:@typescript-eslint/strict-type-checked`
-- Optionally add `plugin:@typescript-eslint/stylistic-type-checked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and add `plugin:react/recommended` & `plugin:react/jsx-runtime` to the `extends` list
+### **Ferramentas Usadas**
+
+<img src="https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB" alt="React">
+<img src="https://img.shields.io/badge/React_Router-CA4245?style=for-the-badge&logo=react-router&logoColor=white" alt="React Router">
+<img src="https://img.shields.io/badge/Tailwind_CSS-38B2AC?style=for-the-badge&logo=tailwind-css&logoColor=white" alt="Tailwind">
+<img src="https://img.shields.io/badge/Sass-CC6699?style=for-the-badge&logo=sass&logoColor=white" alt="sass">
+<img src="https://img.shields.io/badge/TypeScript-007ACC?style=for-the-badge&logo=typescript&logoColor=white" alt="typescript">
+
+### **Contato & RedeSociais**
+
+<div>
+<a href='https://www.linkedin.com/in/eryktavares35/' target='_blank' rel='noopener'><img src='https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white'></a>
+<a href='https://www.instagram.com/lord_eryktavares/?hl=pt-br' target='_blank'><img src='https://img.shields.io/badge/Instagram-E4405F?style=for-the-badge&logo=instagram&logoColor=white'></a>
+<a href='http://api.whatsapp.com/send?phone=557591952463' target='_blank'><img src='https://img.shields.io/badge/WhatsApp-25D366?style=for-the-badge&logo=whatsapp&logoColor=white'></a>
+<a href='https://discord.com/users/859431514449379358' target='_blank'><img src='https://img.shields.io/badge/-@ErykTavares%239649-4169E1?style=flat&labelColor=7289da&logo=discord&logoColor=white'></a>
+<a href='https://www.youtube.com/channel/UCvLrUAMzmxB-H0iK8H7ReQg' target='_blank'><img src='https://img.shields.io/badge/YouTube-FF0000?style=for-the-badge&logo=youtube&logoColor=white'></a>
+</div>
+
+---
+
+###### **Copyright ErykTavares © 2023**
